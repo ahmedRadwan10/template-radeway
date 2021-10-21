@@ -1234,6 +1234,9 @@ header .container ul li:last-of-type::before {
   .subscribe form input[type="submit"] {
     font-size: 0.7rem;
   }
+  .subscribe form input[type="email"] {
+    width: 200px;
+  }
 }
 
 .subscribe  p {

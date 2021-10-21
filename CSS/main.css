@@ -1314,6 +1314,10 @@ header .container ul li:last-of-type::before {
   border-radius: var(--border-radius);
 }
 
+.contact .container form input:not(:last-of-type):focus {
+  border:2px solid var(--primary-400);
+}
+
 .contact .container form textarea {
   width: 100%;
   height: 200px;
@@ -1322,6 +1326,10 @@ header .container ul li:last-of-type::before {
   outline: none;
   border: 1px solid var(--grey-400);
   border-radius: var(--border-radius);
+}
+
+.contact .container form textarea:focus {
+  border:2px solid var(--primary-400);
 }
 
 

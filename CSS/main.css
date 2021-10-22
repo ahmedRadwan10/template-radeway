@@ -110,23 +110,7 @@ header .container ul {
 }
 
 @media (max-width:767px){
-  header .container ul {
-    display: none;
-  }
-  header .container .nav {
-    display: block;
-  }
-  header .container .nav:hover + ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--primary-200);
-    border-radius: var(--border-radius);
-    padding: 30px 0;
-  }
+
   header .container .nav:hover + ul li {
     display:block;
     padding: 15px 20px;
@@ -149,7 +133,9 @@ header .container ul {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 80vh;
+    max-width: 100%;
     background-color: var(--primary-200);
     border-radius: var(--border-radius);
     padding: 30px 0;

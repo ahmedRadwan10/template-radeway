@@ -1312,10 +1312,12 @@ header .container ul li:last-of-type::before {
   outline: none;
   border: 1px solid var(--grey-400);
   border-radius: var(--border-radius);
+  transition: 0.3s box-shadow ease;
 }
 
 .contact .container form input:not(:last-of-type):focus {
-  border:2px solid var(--primary-400);
+  border:1px solid var(--primary-400);
+  box-shadow: var(--shadow-4);
 }
 
 .contact .container form textarea {
@@ -1326,10 +1328,12 @@ header .container ul li:last-of-type::before {
   outline: none;
   border: 1px solid var(--grey-400);
   border-radius: var(--border-radius);
+  transition: 0.3s box-shadow ease;
 }
 
 .contact .container form textarea:focus {
-  border:2px solid var(--primary-400);
+  border:1px solid var(--primary-400);
+  box-shadow: var(--shadow-4);
 }
 
 
@@ -1349,6 +1353,13 @@ header .container ul li:last-of-type::before {
 .contact .container form input[type="submit"]:hover {
   opacity: 70%;
   cursor: pointer;
+}
+
+@media (max-width:767px) {
+  
+.contact .container form input[type="submit"] {
+  margin-left: 0;
+}
 }
 
 .contact .container .contact-info .numbers {
@@ -1425,5 +1436,11 @@ footer p:last-child {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+  line-height: 1.6;
+}
+
+footer p:last-child span {
+  color: var(--primary-400);
+  font-weight: bold;
 }
 /* end footer */
